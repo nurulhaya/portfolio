@@ -1,12 +1,22 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Container, Center } from "@mantine/core";
+
+import {
+  Container,
+  Center,
+  AppShell,
+  Navbar,
+  Header,
+  Button,
+  Group
+} from "@mantine/core";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -15,11 +25,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <Container size="fluid">
-          <Center><h1>Work in progress ^~^</h1></Center>
-        </Container>
-      </main>
+      <AppShell className={}
+        padding="md"
+        header={
+          <Header height={60} p="xs">
+            <Group position="center">
+              <Link href="/"><Button variant="subtle">Home</Button></Link>
+              <Link href="/projects"><Button variant="subtle">Projects</Button></Link>
+              <Link href="/resume"><Button variant="subtle">Resume</Button></Link>
+              <Link href="/contact"><Button variant="subtle">Contact</Button></Link>
+
+            </Group>
+
+          </Header>}
+      >
+        <Container size="fluid" className='content'><Center><h1>Hi, I'm Nurul!</h1></Center></Container>
+
+      </AppShell>
     </>
   )
 }
