@@ -43,7 +43,7 @@ export default function Home() {
       >
       <Container size="fluid" className="greeting">
         <Center><h1>Hi, I&lsquo;m Nurul! :)</h1></Center>
-        <Center className="tagline"><p>I&lsquo;m an aspiring frontend developer/UX researcher based in Washington, DC. <br/>Here is some of my work:</p></Center>
+        <Center className="tagline"><p>I&lsquo;m an aspiring frontend developer/UX engineer based in Washington, DC. <br/>Here is some of my work:</p></Center>
         </Container>
         <Container size="fluid" className="content">
           <ProjectCard
