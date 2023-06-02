@@ -37,7 +37,8 @@ export default function App(props: AppProps) {
               flexDirection: 'row',
               maxWidth: '960px',
               gap: '20px',
-              // flexWrap:'wrap'
+              flexWrap:'wrap',
+              marginBottom: '10rem'
             },
 
             '.title': {
