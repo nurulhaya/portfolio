@@ -2,6 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import { ProjectCard } from "../../components/ProjectCard"
 import { Inter } from "next/font/google"
+import { SocialIcon } from 'react-social-icons';
 
 import {
   Container,
@@ -31,7 +32,9 @@ export default function Home() {
         // header={
         //   <Header height={60} p="xs">
         //     <Group position="center">
-        //       <Link href="/"><Button variant="subtle">Home</Button></Link>
+        //     <Link href="mailto:nhaya@terpmail.umd.edu"><Button variant="subtle">Resume</Button></Link>
+        //     <Link href="mailto:nhaya@terpmail.umd.edu"><Button variant="subtle">LinkedIn</Button></Link>
+        //       {/* <Link href="/"><Button variant="subtle">Home</Button></Link> */}
         //       {/* <Link href="/projects"><Button variant="subtle">Projects</Button></Link> */}
         //       {/* <Link href="/resume"><Button variant="subtle">Resume</Button></Link> */}
         //       <Link href="mailto:nhaya@terpmail.umd.edu"><Button variant="subtle">Contact</Button></Link>
@@ -42,6 +45,9 @@ export default function Home() {
         //   }
       >
       <Container size="fluid" className="greeting">
+        <Center><SocialIcon url="https://www.linkedin.com/in/nurulhaya" target="_blank"/>
+        {/* <SocialIcon url="https://jaketrent.com" network="mailto" /> */}
+        </Center>
         <Center><h1>Hi, I&rsquo;m Nurul! :)</h1></Center>
         <Center className="tagline"><p>I&rsquo;m an aspiring frontend developer/UX engineer based in Washington, DC. <br/>Here are some of my work:</p></Center>
         </Container>
