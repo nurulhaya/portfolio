@@ -41,7 +41,7 @@ export default function App(props: AppProps) {
             },
 
             '.title': {
-              fontWeight: '700'
+              fontWeight: 'bold'
             },
 
             a: {
