@@ -10,6 +10,7 @@ export function ProjectCard(props : any) {
         <Image
           src={props.image}
           height={160}
+          alt=""
         />
       </Card.Section>
 
