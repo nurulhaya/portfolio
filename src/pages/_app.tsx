@@ -1,8 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
-// import styles from '@/styles/Home.module.css'
-// import styles from 'styles.css'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -20,6 +18,36 @@ export default function App(props: AppProps) {
         withNormalizeCSS
         theme={{
           fontFamily: 'brandon-grotesque, sans serif',
+          globalStyles: (theme) => ({
+            '*, *::before, *::after': {
+              boxSizing: 'border-box',
+            },
+
+            '.greeting': {
+              marginTop: '10rem',
+            },
+
+            '.tagline': {
+              textAlign: 'center',
+              marginBottom: '2rem'
+            },
+
+            '.content': {
+              display: 'flex',
+              flexDirection: 'row',
+              maxWidth: '960px',
+              gap: '20px',
+              // flexWrap:'wrap'
+            },
+
+            '.title': {
+              fontWeight: '700'
+            },
+
+            a: {
+              textDecoration: 'none'
+            }
+          }),
         }}
       >
         <Component {...pageProps} />
