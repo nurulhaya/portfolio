@@ -43,18 +43,25 @@ export default function Home() {
       >
       <Container size="fluid" className="greeting">
         <Center><h1>Hi, I&rsquo;m Nurul! :)</h1></Center>
-        <Center className="tagline"><p>I&rsquo;m an aspiring frontend developer/UX engineer based in Washington, DC. <br/>Here is some of my work:</p></Center>
+        <Center className="tagline"><p>I&rsquo;m an aspiring frontend developer/UX engineer based in Washington, DC. <br/>Here are some of my work:</p></Center>
         </Container>
         <Container size="fluid" className="content">
           <ProjectCard
-          tags="Postgres / Google Cloud / Express"
+          tags="Postgres / Google Cloud / Node / Express"
           image="https://github.com/nurulhaya/weedwarriors/raw/main/client/images/screenshot01.png" 
           title="Weed Warriors" description="Web application for collaborative mapping of local invasive plant species." link="https://github.com/nurulhaya/weedwarriors"
           ></ProjectCard>
 
+
+<ProjectCard
+          tags="Figma"
+          image="https://i.imgur.com/epWVgBb.png" 
+          title="Subscription Surfer (Mockup)" description="Medium-fidelity mockup for web application displaying entries from a database."
+          link="https://www.figma.com/file/amRkIkGAasoSysCfxPBTpr/Group-13-Prototype-v1?type=design&node-id=0%3A1&t=fMXTF1R9E3MxlMJr-1"
+          ></ProjectCard>
           
 <ProjectCard
-          tags="MySQL / Express"
+          tags="MySQL / Node / Express"
           image="https://i.imgur.com/u1vlCsy.png"
           title="Subscription Surfer" 
           description="Web application that displays available movies across streaming platforms." 
@@ -64,15 +71,9 @@ export default function Home() {
 <ProjectCard
           tags="Figma"
           image="https://i.imgur.com/953pLK3.png" 
-          title="Makeathon 2023: HealthAI" description="Low-fidelity mockup for an AI-based application promoting health
+          title="Makeathon 2023: HealthAI (Mockup)" description="Low-fidelity mockup for an AI-based application promoting health
           literacy."
           link="https://docs.google.com/presentation/d/1qUWz_iaR_krhVGVEgTSYXGuo33AhatLXbb5YHUo5avQ/edit?usp=sharing"></ProjectCard>
-
-{/* <ProjectCard
-          tags="Postgres / Google Cloud /  Express"
-          image="https://github.com/nurulhaya/weedwarriors/raw/main/client/images/screenshot01.png" 
-          title="Weed Warriors" description="Frontend for a reporting system where users collaboratively map instances of local invasive plant species." link="https://github.com/nurulhaya/weedwarriors"
-          ></ProjectCard> */}
 
 
           </Container>
