@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { ProjectCard } from '../../components/ProjectCard'
-import { Inter } from 'next/font/google'
+import Head from "next/head"
+import Link from "next/link"
+import { ProjectCard } from "../../components/ProjectCard"
+import { Inter } from "next/font/google"
 
 import {
   Container,
@@ -14,7 +14,7 @@ import {
   Text
 } from "@mantine/core";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
 
@@ -41,11 +41,11 @@ export default function Home() {
         //   </Header>
         //   }
       >
-      <Container size="fluid" className='greeting'>
-        <Center><h1>Hi, I'm Nurul! :)</h1></Center>
-        <Center className='tagline'><p>I&lsquo;m an aspiring frontend developer/UX researcher based in Washington, DC. <br/>Here is some of my work:</p></Center>
+      <Container size="fluid" className="greeting">
+        <Center><h1>Hi, I&lsquo;m Nurul! :)</h1></Center>
+        <Center className="tagline"><p>I&lsquo;m an aspiring frontend developer/UX researcher based in Washington, DC. <br/>Here is some of my work:</p></Center>
         </Container>
-        <Container size="fluid" className='content'>
+        <Container size="fluid" className="content">
           <ProjectCard
           tags="Postgres / Google Cloud / Express"
           image="https://github.com/nurulhaya/weedwarriors/raw/main/client/images/screenshot01.png" 
