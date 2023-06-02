@@ -4,7 +4,7 @@ import Link from 'next/link'
 export function ProjectCard(props : any) {
   return (
     
-    <div style={{ width: 320, margin: 'auto' }}>
+    <div style={{ width: '50%', margin: 'auto' }}>
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Card.Section>
         <Image
